@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<nav id="navMenu">
 			<ul id="ulMenu">
 				<li><a href="<?= base_url();?>CI/index.php/page_demo/demonstracao">Demo</a></li>
-				<li><a href="<?= base_url();?>CI/index.php/page_doc/documentacao">Doc</a></li>
+				<li><a href="<?= base_url();?>CI/index.php/documentacao/page_doc">Doc</a></li>
 				<li class="liCenter"><a href="https://github.com/santosEvani/ProjectKerna" target="_blank">GitHub</a></li>
 			</ul>
 	</nav>

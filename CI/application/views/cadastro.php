@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<nav id="navMenu">
     		<ul id="ulMenu">
     			<li class="liCenter"><a href="#">Demo</a></li>
-    			<li class="liCenter"><a href="doc.html">Doc</a></li>
+    			<li class="liCenter"><a href="<?= base_url();?>CI/index.php/documentacao/page_doc">Doc</a></li>
     			<li class="liCenter"><a href="https://github.com/santosEvani/ProjectKerna" target="_blank">GitHub</a></li>
     			<li id="blocoCad"><a href="<?php echo base_url();?>CI/index.php/cadastro/page_cadastro"><img src="<?php echo base_url();?>CI/public/imgs/iconCadastro.png" alt=" "></a></li>
     		</ul>
