@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: #FF4500;font-size: 50px; border: none;">&times;</a>
 			<ul id="ulSand">
 				<li><a href="<?php echo base_url();?>CI/index.php/pagemain/index">Home</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="<?php echo base_url();?>CI/index.php/sobre/page_sobre">Sobre</a></li>
+				<li><a href="<?php echo base_url();?>CI/index.php/contato/page_contato">Contato</a></li>
 			</ul>
 		</div>
 
@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 
 		<div id="blocoCad">
-			<a href="<?php echo base_url();?>CI/index.php/page_cadastro/cadastro"><img src="<?php echo base_url();?>CI/public/imgs/iconCadastro.png" alt=" "></a>
+			<a href="<?php echo base_url();?>CI/index.php/cadastro/page_cadastro"><img src="<?php echo base_url();?>CI/public/imgs/iconCadastro.png" alt=" "></a>
 		</div>
 	</header>
 	
