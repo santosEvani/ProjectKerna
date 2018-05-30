@@ -115,6 +115,18 @@ ul#ulSand li a img{
 	width: 20px; 
 	height: 20px;
 }
+
+#ulSand li:nth-child(4){
+	padding: 4% 0;
+	background-color: #30105a;
+	color: white;
+}
+
+ul#ulSand li img{
+	padding: 0 5%;
+	width: 20px; 
+	height: 20px;
+}
 /*-----------------------------------------------------------------------------*/
 
 footer{
