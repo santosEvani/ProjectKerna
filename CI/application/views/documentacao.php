@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Documentação</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>CI/public/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/doc.css');?>">
 </head>
 <body>
 	<header>	
@@ -15,11 +15,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<ul id="ulSand">
 				<span id="iconMenu">Kerna</span>
 				<p>Kerna documentação</p>
-				<li><a href="<?php echo base_url();?>CI/index.php/pagemain/index"><img src="<?= base_url();?>CI/public/imgs/icone-casa-e-decoracao-w.png">Home</a></li>
-				<li><a href="<?php echo base_url();?>CI/index.php/config/page_config"><img src="<?= base_url();?>CI/public/imgs/white-settings-256.png">Configuração</a></li>
-				<li><a href="<?php echo base_url();?>CI/index.php/cssEstilo/page_estilo"><img src="<?= base_url();?>CI/public/imgs/white-about-256.png">CSS Classes</a></li>
-				<li><a href="<?php echo base_url();?>CI/index.php/roteiro/page_roteiro"><img src="<?= base_url();?>CI/public/imgs/Document.png">Roteiro</a></li>
-				<li><a href="https://github.com/santosEvani/ProjectKerna" target="_blank"><img src="<?= base_url();?>CI/public/imgs/Git-icon-white.svg.png">GitHub</a></li>
+				<li><a href="<?php echo site_url('pagemain/index');?>"><img src="<?= base_url('public/imgs/icone-casa-e-decoracao-w.png');?>">Home</a></li>
+				<li><a href="<?php echo site_url('config/page_config');?>"><img src="<?= base_url('public/imgs/white-settings-256.png');?>">Configuração</a></li>
+				<li><a href="<?php echo site_url('cssEstilo/page_estilo');?>"><img src="<?= base_url('public/imgs/white-about-256.png');?>">CSS Classes</a></li>
+				<li><a href="<?php echo site_url('roteiro/page_roteiro');?>"><img src="<?= base_url('public/imgs/Document.png');?>">Roteiro</a></li>
+				<li><a href="https://github.com/santosEvani/ProjectKerna" target="_blank"><img src="<?= base_url('public/imgs/Git-icon-white.svg.png');?>">GitHub</a></li>
 			</ul>
 		</div>
 

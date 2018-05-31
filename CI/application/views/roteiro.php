@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Roteiro</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>CI/public/css/roteiro.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/roteiro.css');?>">
 </head>
 <body>
 	<header>	
@@ -14,12 +14,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<ul id="ulSand">
 				<span id="iconMenu">Kerna</span>
 				<p>Kerna documentação</p>
-				<li><a href="<?php echo base_url();?>CI/index.php/documentacao/page_doc"><img src="<?= base_url();?>CI/public/imgs/arrow_back_white_192x192.png">Voltar</a></li>
-				<li><img src="<?= base_url();?>CI/public/imgs/Document.png">Roteiro</li>
-                <li><a href="<?php echo base_url();?>CI/index.php/roteiro/page_roteiro"><img src="<?= base_url();?>CI/public/imgs/Document.png">Personagens</a></li>
-                <li><a href="<?php echo base_url();?>CI/index.php/roteiro/page_roteiro"><img src="<?= base_url();?>CI/public/imgs/Document.png">Cenários</a></li>
-                <li><a href="<?php echo base_url();?>CI/index.php/roteiro/page_roteiro"><img src="<?= base_url();?>CI/public/imgs/Document.png">Áudios</a></li>
-                <li><a href="<?php echo base_url();?>CI/index.php/roteiro/page_roteiro"><img src="<?= base_url();?>CI/public/imgs/Document.png">Cenas</a></li>
+				<li><a href="<?php echo site_url('documentacao/page_doc');?>"><img src="<?= base_url('public/imgs/arrow_back_white_192x192.png');?>">Voltar</a></li>
+				<li><img src="<?= base_url('public/imgs/Document.png');?>">Roteiro</li>
+                <li><a href="<?php echo site_url('roteiro/page_roteiro');?>"><img src="<?= base_url('public/imgs/Document.png');?>">Personagens</a></li>
+                <li><a href="<?php echo site_url('roteiro/page_roteiro');?>"><img src="<?= base_url('public/imgs/Document.png');?>">Cenários</a></li>
+                <li><a href="<?php echo site_url('roteiro/page_roteiro');?>"><img src="<?= base_url('public/imgs/Document.png');?>">Áudios</a></li>
+                <li><a href="<?php echo site_url('roteiro/page_roteiro');?>"><img src="<?= base_url('public/imgs/Document.png');?>">Cenas</a></li>
 			</ul>
 		</div>
 

@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>CSS Estilo</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>CI/public/css/cssEstilo.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/cssEstilo.css');?>">
 </head>
 <body>
 	<header>	
@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<ul id="ulSand">
 				<span id="iconMenu">Kerna</span>
 				<p>Kerna documentação</p>
-				<li><a href="<?php echo base_url();?>CI/index.php/documentacao/page_doc"><img src="<?= base_url();?>CI/public/imgs/arrow_back_white_192x192.png">Voltar</a></li>
-				<li><img src="<?= base_url();?>CI/public/imgs/white-about-256.png">CSS Classes</li>
+				<li><a href="<?php echo site_url('documentacao/page_doc');?>"><img src="<?= base_url('public/imgs/arrow_back_white_192x192.png');?>">Voltar</a></li>
+				<li><img src="<?= base_url('public/imgs/white-about-256.png');?>">CSS Classes</li>
 			</ul>
 		</div>
 
