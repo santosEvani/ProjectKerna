@@ -3,36 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Contato Kerna</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>CI/public/css/contato.css">
-	<script type="text/javascript" src="<?= base_url();?>CI/public/js/js.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/contato.css');?>">
+	<script type="text/javascript" src="<?= base_url('public/js/js.js');?>"></script>
 </head>
 <body>
-	<header>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: #FF4500;font-size: 50px; border: none;">&times;</a>
-			<ul id="ulSand">
-				<li><a href="<?php echo base_url();?>CI/index.php/pagemain/index">Home</a></li>
-				<li><a href="<?php echo base_url();?>CI/index.php/sobre/page_sobre">Sobre</a></li>
-				<li><a href="<?php echo base_url();?>CI/index.php/contato/page_contato">Contato</a></li>
-			</ul>
-		</div>
-
-		<div id="divLogo">Kerna</div>
-
-		<div id="divMenu">
-			<span id="iconMenu" onclick="openNav()">&#9776;</span>
-		</div>
-
-		<nav id="navMenu">
-    		<ul id="ulMenu">
-    			<li class="liCenter"><a href="#">Demo</a></li>
-    			<li class="liCenter"><a href="<?= base_url();?>CI/index.php/documentacao/page_doc">Doc</a></li>
-    			<li class="liCenter"><a href="https://github.com/santosEvani/ProjectKerna" target="_blank">GitHub</a></li>
-    			<li id="blocoCad"><a href="<?php echo base_url();?>CI/index.php/cadastro/page_cadastro"><img src="<?php echo base_url();?>CI/public/imgs/iconCadastro.png" alt=" "></a></li>
-    		</ul>
-    	</nav>
-
-	</header>
+	<?php $this->load->view('menuSupresa');?>
 	
 	<div id="container">
 
