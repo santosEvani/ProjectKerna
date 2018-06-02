@@ -5,41 +5,44 @@ class Contato extends CI_Controller {
 	
 	public function __construct(){
 		parent::__construct();
-			
+		$this->load->helper('form');
+		/*
+        * Carrega a library 'email'
+        */ 
+        $this->load->library('email');
+        //biblioteca responsavel pela validacao
+        $this->load->library('form_validation');
 	}
 
 	public function page_contato(){
         $this->load->view('contato');
 	}
 
-    public function enviaEmail() {
-        $this->load->helper('form');
-        $this->load->library('email');
+    public function enviaEmail(){
         
-        $email = $this->input->post('email', TRUE);
-        $nome = $this->input->post('nome', TRUE);
-        $mensagem = $this->input->post('mensagem', TRUE);
-        $assunto = $this->input->post('assunto', TRUE);
-
-        $em = $this->email->send();
-        if ($em) {
-            $this->email->from($email, $nome);
-            $this->email->to('karolaynedias12@gmail.com');
-            $this->email->subject($assunto);
-            $this->email->message('<html><head></head><body>
-                Nome:       ' . $nome . ' <br />
-                E-mail:     ' . $email . ' <br />
-                Assunto:    ' . $assunto . ' <br />
-                Mensagem:   ' . $mensagem . ' <br />
-                </body></html>');
-            $data['email_enviado'] = 'E-mail enviado com sucesso. Aguarde contato.';
-            
-           $this->load->view('contato', $data);
-        } else {
-            $data['email_enviado'] = 'Erro ao enviar o email. Favor enviar um e-mail para xxx@xxx.com.br';
-            $this->load->view('contato', $data);
+        //$this->input->post();
+        
+        //seta as regras de validacao dos campos
+        $this->form_validation->set_rules('nome', 'Digite seu nome', 'required|trim|min_length[5]|max_length[50]');
+        $this->form_validation->set_rules('email', 'Digite seu email', 'required|trim|valid_email|max_length[50]|is_unique[users.email]');
+        $this->form_validation->set_rules('assunto', 'Assunto', TRUE);
+        $this->form_validation->set_rules('mensagem', 'Mensagem', 'required');
+        
+        // run - metodo que chama as regras de validacao
+        // retornando 'false' quando ocorrer erro na validacao
+        // 'true' quando todas as informacoes estiverem corretas
+        if ($this->form_validation->run() == FALSE){
+            //variavel para repassar para a view as mensagens de erro
+            $erros['msgErros'] = validation_errors();
+            //carrega a view, passando para ela a variavel que contem as mensagens de validacao
+            //$this->load->view('contato', $erros);
         }
-        //$this->load->view('enviaEmail');
+        else{
+            $erros['msgErros'] = null;
+            echo "Formulário enviado com sucesso.";
+        }
+       
+    $this->load->view('contato', $erros);
     }
 
 }
