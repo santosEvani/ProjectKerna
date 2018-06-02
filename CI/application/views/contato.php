@@ -19,33 +19,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<p>Você pode entrar em contato diretamente pelo e-mail equipe@kernia.com.br ou preencher formulário abaixo:</p>
 			
 		</div>
-	
-		<form id="form" name="form" action="/CI/index.php/contato/enviaEmail" method="post" accept-charset="utf-8">
-				<p>
-					<label for="name">Digite seu nome </label><br/>
-	        		<input id="name" name="name" type="text" autocomplete="off" size="50" maxlength="50" required />
-				</p>
+		
+		<div>
+		<?php 
+			// serve para saber se uma variavel existe
+			if(isset($msgErros)){
+				echo $msgErros;
+			}
+		?>
+		</div>
+		
+		<form id="form" name="form" action="<?= site_url('contato/enviaEmail');?>" method="post" accept-charset="utf-8">
+			<p>
+				<label for="name">Digite seu nome </label><br/>
+	        	<input id="name" name="name" type="text" size="50"/>
+			</p>
 
-				<p>
-					<label for="email">Digite seu email </label><br/>
-	       			<input id="email" name="email" type="email" autocomplete="off" size="50" maxlength="64" required />
-				</p>
+			<p>
+				<label for="email">Digite seu email </label><br/>
+	       		<input id="email" name="email" type="email" size="50"/>
+			</p>
 
-				<p>
-					<label for="assunto">Assunto </label><br/>
-	        		<input id="assunto" name="assunto" type="text" size="50" maxlength="50"/>
-				</p>
+			<p>
+				<label for="assunto">Assunto </label><br/>
+	        	<input id="assunto" name="assunto" type="text" size="50"/>
+			</p>
 
-				<p>
-					<label for="mensagem">Mensagem </label><br/>
-					<textarea id="mensagem" name="mensagem" rows="8" cols="80" required></textarea>
-				</p>
+			<p>
+				<label for="mensagem">Mensagem </label><br/>
+				<textarea id="mensagem" name="mensagem" rows="8" cols="80"></textarea>
+			</p>
 			
-				<button class="butCad btnModal" type="submit" form="form" value="submit" id="enviar" onclick="validar()">Enviar</button>
+			<button class="butCad btnModal" type="submit" form="form" value="submit" id="enviar" onclick="validar()">Enviar</button>
 
-			</form>
-			
-			<?= $email_enviado ?>
+		</form>
 
 	</div>
 
