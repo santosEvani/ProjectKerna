@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Kerna ID</title>
+	<title>Cadastro - Kerna</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/cadastro.css');?>">
 	<script type="text/javascript" src="<?= base_url('public/js/js.js');?>"></script>
 </head>

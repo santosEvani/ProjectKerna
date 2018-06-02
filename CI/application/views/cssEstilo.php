@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>CSS Estilo</title>
+	<title>CSS Estilo - Kerna</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/cssEstilo.css');?>">
 </head>
 <body>

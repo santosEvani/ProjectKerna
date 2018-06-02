@@ -1,11 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Configuração</title>
+	<title>Configuração - Kerna</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/config.css');?>">
 </head>
 <body>
