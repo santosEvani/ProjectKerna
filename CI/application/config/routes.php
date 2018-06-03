@@ -60,3 +60,4 @@ $route['documentacao'] = 'documentacao/page_doc';
 $route['roteiro'] = 'roteiro/page_roteiro';
 $route['home'] = 'pagemain/index';
 $route['sobre'] = 'sobre/page_sobre';
+$route['sobre'] = 'demo/page_demo';
