@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<p id="pCenter">Cadastre-se e tenha acesso aos nossos produtos e serviços. </p>
 		
-		<form id="form" name="form" action="#" method="post">
+		<form id="form" name="form" action="/ci/index.php/cadastro/inserir" method="post">
 				<p class="formPs">
 					<label for="name">Username </label><br/>
 	        		<input id="name" name="name" type="text" autocomplete="off" size="50" maxlength="50" required />
