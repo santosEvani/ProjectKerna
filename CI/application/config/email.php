@@ -17,5 +17,6 @@ $config['mailpath'] = '/usr/sbin/sendmail';
 $config['charset']   = 'utf-8';
 $config['wordwrap'] = TRUE;
 
-
+// https://www.codeigniter.com/userguide3/libraries/email.html?highlight=protocol#sending-email
+// https://www.youtube.com/watch?v=XtimFqopwDs
 
