@@ -17,6 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<p id="pCenter">Cadastre-se e tenha acesso aos nossos produtos e serviços. </p>
 		
+<<<<<<< HEAD
 		<div>
 		<?php 
 			// serve para saber se uma variavel existe
@@ -27,6 +28,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		
 		<form id="form" name="form" action="<?= site_url('cadastro/validarCampos');?>" method="post">
+=======
+		<form id="form" name="form" action="/ci/index.php/cadastro/inserir" method="post">
+>>>>>>> ab134c3af4a7ede3e50f3ff626070e28ce74581a
 				<p class="formPs">
 					<label for="username">Username </label><br/>
 	        		<input id="username" name="username" type="text" size="50" />
