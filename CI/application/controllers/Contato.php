@@ -51,15 +51,17 @@ class Contato extends CI_Controller {
             </body></html>');
             
             if ($this->email->send()) {
-                $erros['msgErros'] = "E-mail enviado com sucesso. Aguarde contato!!!";
+                $erros['enviadoSucesso'] = "Mensagem enviada com sucesso. Aguarde contato!!!";
+               echo '<script type="text/javascript">document.form.reset();</script>';
                 
             } else {
-                $erros['msgErros'] = 'Erro ao enviar o email. Por favor tentar novamente!!!';
-                
+                $erros['msgErros'] = 'Erro ao enviar a mensagem. Por favor tentar novamente!!!';
+                //$this->load->view('contato', $erros);
             }
         }
       
         $this->load->view('contato', $erros);
+        
     }
 
 }

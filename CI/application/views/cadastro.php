@@ -16,29 +16,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<h1>Criar um Kerna ID</h1>
 		
 		<p id="pCenter">Cadastre-se e tenha acesso aos nossos produtos e serviços. </p>
-		
-<<<<<<< HEAD
-		<div>
+	
 		<?php 
 			// serve para saber se uma variavel existe
 			if(isset($msgErros)){
-				echo $msgErros;
+				echo '<div style="color:#FF4500;font-size:0.9em;margin-top:3%;">'. $msgErros .'</div>';
 			}
 		?>
-		</div>
 		
+		<?php 
+			// serve para saber se uma variavel existe
+			if(isset($enviado)){
+				echo '<div style="color:green;font-size:1em;margin-top:3%;text-align: center;">'. $enviado .'</div>';
+			}
+		?>
 		<form id="form" name="form" action="<?= site_url('cadastro/validarCampos');?>" method="post">
-=======
-		<form id="form" name="form" action="/ci/index.php/cadastro/inserir" method="post">
->>>>>>> ab134c3af4a7ede3e50f3ff626070e28ce74581a
+	
 				<p class="formPs">
 					<label for="username">Username </label><br/>
-	        		<input id="username" name="username" type="text" size="50" />
+	        		<input id="username" name="username" type="text" value="<?php echo set_value('username'); ?>" size="50" />
 				</p>
 
 				<p class="formPs">
 					<label for="email">Email </label><br/>
-	       			<input id="email" name="email" type="email" size="50" />
+	       			<input id="email" name="email" type="email" value="<?php echo set_value('email'); ?>" size="50" />
 				</p>
 
 				<p class="formPs">
@@ -49,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<p class="formPs">
 					<label for="confimarSenha">Confimar Senha</label><br/>
 	        		<input id="confimarSenha" name="confimarSenha" type="password" size="50" />
+	        		
 				</p>
 
 				<div id="divBot">
