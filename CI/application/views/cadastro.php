@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/cadastro.css');?>">
 	<script type="text/javascript" src="<?= base_url('public/js/js.js');?>"></script>
 </head>
-<body onload="document.form.reset()">
+<body>
 	<?php $this->load->view('menuSupresa');?>
 
 	<div id="container">
