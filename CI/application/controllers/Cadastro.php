@@ -49,6 +49,7 @@ public function validarSenha(){
                 } else {
                     $enviado['enviado'] = "Cadastro realizado com sucesso.!!!";
                     $this->load->view('cadastro', $enviado);
+                    redirect('Cadastro/cadastro'); //<-- Limpa os campos do formulário
                 }
             
         } else {
@@ -59,7 +60,6 @@ public function validarSenha(){
         
                 
 	}
-      
         
 	/* public function inserir(){
         require_once APPPATH."/models/NovoUsuario.php";

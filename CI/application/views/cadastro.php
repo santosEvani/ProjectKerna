@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/cadastro.css');?>">
 	<script type="text/javascript" src="<?= base_url('public/js/js.js');?>"></script>
 </head>
-<body onload="document.form.reset()">
+<body>
 	<?php $this->load->view('menuSupresa');?>
 
 	<div id="container">
@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				echo '<div style="color:green;font-size:1em;margin-top:3%;text-align: center;">'. $enviado .'</div>';
 			}
 		?>
-		<form id="form" name="form" action="<?= site_url('cadastro/validarCampos');?>" method="post">
+		<form id="form" name="form" action="<?= site_url('cadastro/validarCampos');?>" method="post" onload="document.form.reset()">
 	
 				<p class="formPs">
 					<label for="username">Username </label><br/>
