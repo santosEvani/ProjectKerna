@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		
 		<div id="demoplaceholder">
-	        <img src="/CI/public/imgs/screenshotjogo.PNG" alt="Screenshot do jogo"></img>
+	        <img src="/CI/public/imgs/screenshotjogo.PNG" alt="Screenshot do jogo" height="500px" width="1000px"></img>
 		</div>
 		
 		
