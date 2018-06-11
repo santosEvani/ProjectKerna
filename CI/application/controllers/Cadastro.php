@@ -49,7 +49,6 @@ public function validarSenha(){
                 } else {
                     $enviado['enviado'] = "Cadastro realizado com sucesso.!!!";
                     $this->load->view('cadastro', $enviado);
-                    redirect('Cadastro/cadastro'); //<-- Limpa os campos do formulário
                 }
             
         } else {
