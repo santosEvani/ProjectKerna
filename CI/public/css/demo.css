@@ -203,8 +203,8 @@ ul#ulSand li{
 }
 /*-----------------------------------------------------------------------------*/
 div#demoplaceholder{
-    height: 1024px;
-    width: 768px;
+    height: 768px;
+    width: 1024px;
     border: 1px solid black;
     
 }

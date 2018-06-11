@@ -15,12 +15,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<h1>Demo</h1>
 		<div id="ds_ps">
+			<p id="pCenter">Teste a Demo funcional da engine</p>
 			<p></p>
-			<p>Teste a Demo funcional da engine</p>
 		</div>
 		
 		<div id="demoplaceholder">
-	        
+	        <img src="/CI/public/imgs/screenshotjogo.PNG" alt="Screenshot do jogo"></img>
 		</div>
 		
 		
