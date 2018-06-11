@@ -16,7 +16,7 @@
 
 		<nav id="navMenu">
     		<ul id="ulMenu">
-    			<li class="liCenter"><a href="#">Demo</a></li>
+    			<li class="liCenter"><a href="<?= site_url('demo/page_demo');?>">Demo</a></li>
     			<li class="liCenter"><a href="<?= site_url('documentacao/page_doc');?>">Doc</a></li>
     			<li class="liCenter"><a href="https://github.com/santosEvani/ProjectKerna" target="_blank">GitHub</a></li>
     			<li id="blocoCad"><a href="<?php echo site_url('cadastro/page_cadastro');?>"><img src="<?php echo base_url('public/imgs/iconCadastro.png');?>" alt=" "></a></li>
