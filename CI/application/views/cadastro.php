@@ -24,12 +24,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 		?>
 		
-		<?php 
-			// serve para saber se uma variavel existe
-			if(isset($enviado)){
-				echo '<div style="color:green;font-size:1em;margin-top:3%;text-align: center;">'. $enviado .'</div>';
-			}
-		?>
 		<form id="form" name="form" action="<?= site_url('cadastro/inserir');?>" method="post">
 	
 				<p class="formPs">
