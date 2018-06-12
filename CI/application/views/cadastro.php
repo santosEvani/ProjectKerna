@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				echo '<div style="color:green;font-size:1em;margin-top:3%;text-align: center;">'. $enviado .'</div>';
 			}
 		?>
-		<form id="form" name="form" action="<?= site_url('cadastro/validarCampos');?>" method="post" onload="document.form.reset()">
+		<form id="form" name="form" action="<?= site_url('cadastro/inserir');?>" method="post">
 	
 				<p class="formPs">
 					<label for="username">Username </label><br/>
@@ -58,6 +58,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 
 			</form>
+			
+			<div><a href="<?= site_url('login/page_login');?>">Já tenho um Kerna ID</a></div>
 	</div>
 
 	<footer>Copyright © 2018 KERNA.</footer>

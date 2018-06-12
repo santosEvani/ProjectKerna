@@ -18,7 +18,6 @@ class Contato extends CI_Controller {
 	}
 
     public function enviaEmail(){
-        
         //seta as regras de validacao dos campos
         $this->form_validation->set_rules('name', 'Nome', 'required|min_length[3]|max_length[50]');
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|max_length[64]');
@@ -52,7 +51,9 @@ class Contato extends CI_Controller {
             
             if ($this->email->send()) {
                 $erros['enviadoSucesso'] = "Mensagem enviada com sucesso. Aguarde contato!!!";
-               echo '<script type="text/javascript">document.form.reset();</script>';
+                //echo '<script type="text/javascript">document.getElementById('form').reset()</script>';
+                $this->load->view('contato', $erros);
+               
                 
             } else {
                 $erros['msgErros'] = 'Erro ao enviar a mensagem. Por favor tentar novamente!!!';
