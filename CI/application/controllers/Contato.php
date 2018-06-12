@@ -50,10 +50,7 @@ class Contato extends CI_Controller {
             </body></html>');
             
             if ($this->email->send()) {
-                $erros['enviadoSucesso'] = "Mensagem enviada com sucesso. Aguarde contato!!!";
-                //echo '<script type="text/javascript">document.getElementById('form').reset()</script>';
-                $this->load->view('contato', $erros);
-               
+                redirect('https://kerna-karolaynedias.c9users.io/CI/contato/page_envioSucesso', true);
                 
             } else {
                 $erros['msgErros'] = 'Erro ao enviar a mensagem. Por favor tentar novamente!!!';
@@ -62,8 +59,12 @@ class Contato extends CI_Controller {
         }
       
         $this->load->view('contato', $erros);
-        
     }
+    
+    public function page_envioSucesso(){
+		$erros['enviadoSucesso'] = "Mensagem enviada com sucesso. Aguarde contato!!!";
+        $this->load->view('contato', $erros);
+	}
 
 }
 
