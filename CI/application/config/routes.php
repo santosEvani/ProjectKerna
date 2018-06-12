@@ -61,3 +61,4 @@ $route['roteiro'] = 'roteiro/page_roteiro';
 $route['home'] = 'pagemain/index';
 $route['sobre'] = 'sobre/page_sobre';
 $route['demo'] = 'demo/page_demo';
+$route['login'] = 'login/page_login';

@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<textarea id="mensagem" name="mensagem" rows="8" cols="80" value="<?= set_value('mensagem'); ?>" ></textarea>
 			</p>
 			
-			<button class="butCad btnModal" type="submit" form="form" value="submit" id="enviar" onclick="validar()">Enviar</button>
+			<button class="butCad btnModal" type="submit" value="submit" id="enviar" onclick="validar()">Enviar</button>
 
 		</form>
 		

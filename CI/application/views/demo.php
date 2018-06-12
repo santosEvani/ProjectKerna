@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Demo</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/demo.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/demonstracao.css');?>">
 	<script type="text/javascript" src="<?= base_url('public/js/js.js');?>"></script>
 </head>
 <body>
